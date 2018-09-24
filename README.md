@@ -1,4 +1,5 @@
 A React.js tutorial video series by Wes Bos. My completed version is hosted here: https://cotd-hvbmlibwlu.now.sh/
+First load will take a minute.
 
 I added a Skip Authentication button to bypass logging in with GitHub.
 
