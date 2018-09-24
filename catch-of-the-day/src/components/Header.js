@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const Header = (props) => (
     // Stateless functional component
@@ -15,5 +16,10 @@ const Header = (props) => (
         </h3>
     </header>
 )
+
+// Development helper. Does not make it to production.
+Header.propTypes = {
+    tagline: PropTypes.string.isRequired
+}
 
 export default Header;

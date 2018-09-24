@@ -1,7 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { formatPrice } from '../helpers'
 
 class Fish extends React.Component {
+    // This proptype is within the component because it is a normal React Component and not necessar to copy the proptypes to every single instance of this component
+    static propTypes = {
+        details: PropTypes.shape({
+            image: PropTypes.string,
+            name: PropTypes.string,
+            price: PropTypes.number,
+            desc: PropTypes.string,
+            status: PropTypes.string
+        }),
+        addToOrder: PropTypes.func
+    }
     render() {
         const isAvailable = this.props.details.status === 'available';
         return (
